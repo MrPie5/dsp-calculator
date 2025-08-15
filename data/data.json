@@ -154,7 +154,27 @@
         {"name": "Plane Smelter", "key_name": "smelter2", "tier": 3, "stack_size": 50},
         {"name": "Spray coater(喷涂机)", "key_name": "spray_coater", "tier": 3, "stack_size": 20},
         {"name": "Chemical plant(化工厂)", "key_name": "chemical_plant", "tier": 3, "stack_size": 20},
-        {"name": "Fractionator(分馏器)", "key_name": "fractionator", "tier": 3, "stack_size": 20}
+        {"name": "Fractionator(分馏器)", "key_name": "fractionator", "tier": 3, "stack_size": 20},
+        {"name": "Engine", "key_name": "engine", "tier": 2, "stack_size": 200},
+        {"name": "Prototype", "key_name": "prototype", "tier": 2, "stack_size": 200},
+        {"name": "Precision Drone", "key_name": "precision_drone", "tier": 3, "stack_size": 200},
+        {"name": "Attack Drone", "key_name": "attack_drone", "tier": 4, "stack_size": 200},
+        {"name": "Corvette", "key_name": "corvette", "tier": 5, "stack_size": 200},
+        {"name": "Destroyer", "key_name": "destroyer", "tier": 6, "stack_size": 200},
+        {"name": "Logistics Bot", "key_name": "logistics_bot", "tier": 3, "stack_size": 200},
+        {"name": "Combustible Unit", "key_name": "combustible_unit", "tier": 2, "stack_size": 200},
+        {"name": "Explosive Unit", "key_name": "explosive_unit", "tier": 3, "stack_size": 200},
+        {"name": "Crystal Explosive Unit", "key_name": "crystal_explosive_unit", "tier": 5, "stack_size": 200},
+        {"name": "Magnum Ammo Box", "key_name": "magnum_ammo_box", "tier": 2, "stack_size": 100},
+        {"name": "Titanium Ammo Box", "key_name": "titanium_ammo_box", "tier": 3, "stack_size": 100},
+        {"name": "Superalloy Ammo Box", "key_name": "superalloy_ammo_box", "tier": 4, "stack_size": 100},
+        {"name": "Missile Set", "key_name": "missile_set", "tier": 2, "stack_size": 100},
+        {"name": "Supersonic Missile Set", "key_name": "supersonic_missile_set", "tier": 4, "stack_size": 100},
+        {"name": "Gravity Missile Set", "key_name": "gravity_missile_set", "tier": 6, "stack_size": 100},
+        {"name": "Shell Set", "key_name": "shell_set", "tier": 2, "stack_size": 100},
+        {"name": "High-Explosive Shell Set", "key_name": "high-explosive_shell_set", "tier": 4, "stack_size": 100},
+        {"name": "Crystal Shell Set", "key_name": "crystal_shell_set", "tier": 6, "stack_size": 100},
+        {"name": "Plasma Capsule", "key_name": "plasma_capsule", "tier": 5, "stack_size": 100}
     ],
     "recipes": [
         {
@@ -873,6 +893,126 @@
             "time": 1,
             "ingredients": [["hydrogen", 30]],
             "product": ["deuterium", 0.3]
+        },
+        {
+            "name": "Engine", "key_name": "engine", "category": "crafting",
+            "time": 2,
+            "ingredients": [["magnetic_coil", 1], ["copper_ingot", 2]],
+            "product": ["engine", 1]
+        },
+        {
+            "name": "Prototype", "key_name": "prototype", "category": "crafting",
+            "time": 2,
+            "ingredients": [["iron_ingot", 3], ["engine", 1], ["circuit_board", 2], ["plasma_exciter", 1]],
+            "product": ["prototype", 1]
+        },
+        {
+            "name": "Precision Drone", "key_name": "precision_drone", "category": "crafting",
+            "time": 4,
+            "ingredients": [["prototype", 1], ["electromagnetic_turbine", 1], ["circuit_board", 2], ["photon_combiner", 2]],
+            "product": ["precision_drone", 1]
+        },
+        {
+            "name": "Attack Drone", "key_name": "attack_drone", "category": "crafting",
+            "time": 4,
+            "ingredients": [["prototype", 1], ["electromagnetic_turbine", 1], ["processor", 1], ["particle_container", 1]],
+            "product": ["attack_drone", 1]
+        },
+        {
+            "name": "Corvette", "key_name": "corvette", "category": "crafting",
+            "time": 5,
+            "ingredients": [["titanium_alloy", 1], ["reinforced_thruster", 1], ["processor", 2], ["particle_container", 3]],
+            "product": ["corvette", 1]
+        },
+        {
+            "name": "Destroyer", "key_name": "destroyer", "category": "crafting",
+            "time":  8,
+            "ingredients": [["frame_material", 20], ["reinforced_thruster", 4], ["processor", 4], ["strange_matter", 1]],
+            "product": ["destroyer", 1]
+        },
+        {
+            "name": "Logistics Bot", "key_name": "logistics_bot", "category": "crafting",
+            "time":  2,
+            "ingredients": [["iron_ingot", 2], ["engine", 1], ["processor", 1]],
+            "product": ["logistics_bot", 1]
+        },
+        {
+            "name": "Combustible Unit", "key_name": "combustible_unit", "category": "crafting",
+            "time":  3,
+            "ingredients": [["coal_ore", 3]],
+            "product": ["combustible_unit", 1]
+        },
+        {
+            "name": "Explosive Unit", "key_name": "explosive_unit", "category": "chemical_plant",
+            "time":  6,
+            "ingredients": [["explosive_unit", 2], ["plastic", 2], ["sulfuric_acid", 1]],
+            "product": ["explosive_unit", 2]
+        },
+        {
+            "name": "Crystal Explosive Unit", "key_name": "crystal_explosive_unit", "category": "chemical_plant",
+            "time": 24,
+            "ingredients": [["explosive_unit", 8], ["casimir_crystal", 1], ["crystal_silicon", 8]],
+            "product": ["crystal_explosive_unit", 8]
+        },
+        {
+            "name": "Magnum Ammo Box", "key_name": "magnum_ammo_box", "category": "crafting",
+            "time":  1,
+            "ingredients": [["copper_ingot", 3]],
+            "product": ["magnum_ammo_box", 1]
+        },
+        {
+            "name": "Titanium Ammo Box", "key_name": "titanium_ammo_box", "category": "crafting",
+            "time":  2,
+            "ingredients": [["magnum_ammo_box", 1], ["titanium_ingot", 2]],
+            "product": ["titanium_ammo_box", 1]
+        },
+        {
+            "name": "Superalloy Ammo Box", "key_name": "superalloy_ammo_box", "category": "crafting",
+            "time":  3,
+            "ingredients": [["titanium_ammo_box", 1], ["titanium_alloy", 1]],
+            "product": ["superalloy_ammo_box", 1]
+        },
+        {
+            "name": "Missile Set", "key_name": "missile_set", "category": "crafting",
+            "time":  2,
+            "ingredients": [["copper_ingot", 6], ["circuit_board", 3], ["combustible_unit", 2], ["engine", 1]],
+            "product": ["missile_set", 1]
+        },
+        {
+            "name": "Supersonic Missile Set", "key_name": "supersonic_missile_set", "category": "crafting",
+            "time":  4,
+            "ingredients": [["missile_set", 2], ["processor", 4], ["explosive_unit", 4], ["thruster", 2]],
+            "product": ["supersonic_missile_set", 2]
+        },
+        {
+            "name": "Gravity Missile Set", "key_name": "gravity_missile_set", "category": "crafting",
+            "time":  6,
+            "ingredients": [["supersonic_missile_set", 3], ["crystal_explosive_unit", 6], ["strange_matter", 3]],
+            "product": ["gravity_missile_set", 3]
+        },
+        {
+            "name": "Shell Set", "key_name": "shell_set", "category": "crafting",
+            "time":  1.5,
+            "ingredients": [["copper_ingot", 9], ["combustible_unit", 2]],
+            "product": ["shell_set", 1]
+        },
+        {
+            "name": "High-Explosive Shell Set", "key_name": "high-explosive_shell_set", "category": "crafting",
+            "time":  3,
+            "ingredients": [["shell_set", 1], ["titanium_ingot", 6], ["explosive_unit", 2]],
+            "product": ["high-explosive_shell_set", 1]
+        },
+        {
+            "name": "Crystal Shell Set", "key_name": "crystal_shell_set", "category": "crafting",
+            "time":  6,
+            "ingredients": [["high-explosive_shell_set", 1], ["titanium_alloy", 3], ["crystal_explosive_unit", 2]],
+            "product": ["crystal_shell_set", 1]
+        },
+        {
+            "name": "Plasma Capsule", "key_name": "plasma_capsule", "category": "crafting",
+            "time":  2,
+            "ingredients": [["graphene", 1], ["magnet", 2], ["deuterium", 10]],
+            "product": ["plasma_capsule", 1]
         }
     ],
     "resources": [
