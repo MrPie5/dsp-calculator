@@ -7,21 +7,26 @@
     "assemblers": [
         {"name": "Assembling machine Mk.I(制造台 Mk.I)", "key_name": "assembler1", "rate": 0.75},
         {"name": "Assembling machine Mk.II(制造台 Mk.II)", "key_name": "assembler2", "rate": 1.0},
-        {"name": "Assembling machine Mk.III(制造台 Mk.III)", "key_name": "assembler3", "rate": 1.5}
+        {"name": "Assembling machine Mk.III(制造台 Mk.III)", "key_name": "assembler3", "rate": 1.5},
+        {"name": "Re-composing Assembler", "key_name": "assembler4", "category": "crafting", "rate": 2}
     ],
     "smelters": [
         {"name": "Arc Smelter(电弧熔炉)", "key_name": "smelter1", "rate": 1},
-        {"name": "Plane Smelter", "key_name": "smelter2", "rate": 22}
+        {"name": "Plane Smelter", "key_name": "smelter2", "rate": 2},
+        {"name": "Negentropy Smelter", "key_name": "smelter3", "category": "smelting", "rate": 3}
     ],
     "buildings": [
         {"name": "Assembling machine Mk.I(制造台 Mk.I)", "key_name": "assembler1", "category": "crafting", "power": 270, "max": 4, "rate": 0.75},
         {"name": "Assembling machine Mk.II(制造台 Mk.II)", "key_name": "assembler2", "category": "crafting", "power": 270, "max": 4, "rate": 1},
         {"name": "Assembling machine Mk.III(制造台 Mk.III)", "key_name": "assembler3", "category": "crafting", "power": 270, "max": 4, "rate": 1.5},
+        {"name": "Re-composing Assembler", "key_name": "assembler4", "category": "crafting", "power": 270, "max": 4, "rate": 2},
 
         {"name": "Arc Smelter(电弧熔炉)", "key_name": "smelter1", "category": "smelting", "power": 360, "max": 4, "rate": 1},
         {"name": "Plane Smelter", "key_name": "smelter2", "category": "smelting", "power": 360, "max": 4, "rate": 2},
+        {"name": "Negentropy Smelter", "key_name": "smelter3", "category": "smelting", "power": 360, "max": 4, "rate": 3},
 
         {"name": "Matrix lab(矩阵实验室)", "key_name": "matrix_lab", "category": "matrix_lab", "power": 480, "max": 4, "rate": 1},
+        {"name": "Self-evolution Lab", "key_name": "matrix_lab2", "category": "matrix_lab", "power": 480, "max": 4, "rate": 3},
         {"name": "Chemical plant(化工厂)", "key_name": "chemical_plant", "category": "chemical_plant", "power": 720, "max": 4, "rate": 1},
         {"name": "Oil refinery(原油精炼厂)", "key_name": "oil_refinery", "category": "oil_refinery", "power": 960, "max": 4, "rate": 1},
         {"name": "Fractionator(分馏器)", "key_name": "fractionator", "category": "fractionator", "power": 720, "max": 4, "rate": 1},
@@ -41,10 +46,18 @@
         {"name": "Titanium ore(钛矿)", "key_name": "titanium_ore", "tier": 0, "stack_size": 100},
         {"name": "Water(水)", "key_name": "water", "tier": 0, "stack_size": 20},
         {"name": "Crude oil(原油)", "key_name": "crude_oil", "tier": 0, "stack_size": 20},
+        {"name": "Kimberlite ore(金伯利矿石)", "key_name": "kimberlite_ore", "tier": 0, "stack_size": 50},
+        {"name": "Log(木材)", "key_name": "log", "tier": 0, "stack_size": 100},
+        {"name": "Fire ice(可燃冰)", "key_name": "fire_ice", "tier": 0, "stack_size": 50},
+        {"name": "Energy Shard", "key_name": "energy_shard", "tier": 0, "stack_size": 100},
+        {"name": "Dark Fog Matrix", "key_name": "dark_fog_matrix", "tier": 0, "stack_size": 200},
+        {"name": "Matter Recombinator", "key_name": "matter_recombinator", "tier": 0, "stack_size": 100},
+        {"name": "Silicon-based Neuron", "key_name": "silicon-based_neuron", "tier": 0, "stack_size": 100},
+        {"name": "Negentropy Singularity", "key_name": "negentropy_singularity", "tier": 0, "stack_size": 50},
+        {"name": "Core Element", "key_name": "core_element", "tier": 0, "stack_size": 50},
         {"name": "Hydrogen(氢)", "key_name": "hydrogen", "tier": 1, "stack_size": 20},
         {"name": "Deuterium(氘)", "key_name": "deuterium", "tier": 1, "stack_size": 20},
         {"name": "Antimatter(反物质)", "key_name": "antimatter", "tier": 1, "stack_size": 20},
-        {"name": "Kimberlite ore(金伯利矿石)", "key_name": "kimberlite_ore", "tier": 0, "stack_size": 50},
         {"name": "Iron ingot(铁块)", "key_name": "iron_ingot", "tier": 1, "stack_size": 100},
         {"name": "Copper ingot(铜块)", "key_name": "copper_ingot", "tier": 1, "stack_size": 100},
         {"name": "Stone(石材)", "key_name": "stone", "tier": 1, "stack_size": 100},
@@ -56,6 +69,7 @@
         {"name": "Hydrogen fuel rod(液氢燃料棒)", "key_name": "hydrogen_fuel_rod", "tier": 2, "stack_size": 30},
         {"name": "Deuteron fuel rod(氘核燃料棒)", "key_name": "deuteron_fuel_rod", "tier": 2, "stack_size": 20},
         {"name": "Antimatter fuel rod(反物质燃料棒)", "key_name": "antimatter_fuel_rod", "tier": 2, "stack_size": 20},
+        {"name": "Strange Annihilation Fuel Rod", "key_name": "strange_annihilation_fuel_rod", "tier": 2, "stack_size": 20},
         {"name": "Fractal silicon(分形硅)", "key_name": "fractal_silicon", "tier": 1, "stack_size": 50},
         {"name": "Magnet(磁铁)", "key_name": "magnet", "tier": 1, "stack_size": 100},
         {"name": "Magnetic coil(磁线圈)", "key_name": "magnetic_coil", "tier": 2, "stack_size": 200},
@@ -63,11 +77,12 @@
         {"name": "Diamond(金刚石)", "key_name": "diamond", "tier": 1, "stack_size": 100},
         {"name": "Crystal silicon(晶格硅)", "key_name": "crystal_silicon", "tier": 2, "stack_size": 100},
         {"name": "Titanium alloy(钛合金)", "key_name": "titanium_alloy", "tier": 2, "stack_size": 100},
-        {"name": "Fire ice(可燃冰)", "key_name": "fire_ice", "tier": 0, "stack_size": 50},
         {"name": "Plastic(塑料)", "key_name": "plastic", "tier": 2, "stack_size": 100},
         {"name": "Organic crystal(有机晶体)", "key_name": "organic_crystal", "tier": 2, "stack_size": 100},
         {"name": "Graphene(石墨烯)", "key_name": "graphene", "tier": 2, "stack_size": 100},
+        {"name": "Engine", "key_name": "engine", "tier": 2, "stack_size": 200},
         {"name": "Thruster(推进器)", "key_name": "thruster", "tier": 2, "stack_size": 100},
+        {"name": "Reinforced thruster(加力推进器)", "key_name": "reinforced_thruster", "tier": 2, "stack_size": 50},
         {"name": "Optical grating crystal(光栅晶体)", "key_name": "optical_grating_crystal", "tier": 2, "stack_size": 50},
         {"name": "Steel(钢材)", "key_name": "steel", "tier": 2, "stack_size": 100},
         {"name": "Circuit board(电路板)", "key_name": "circuit_board", "tier": 3, "stack_size": 200},
@@ -82,7 +97,6 @@
         {"name": "Strange matter(奇异物质)", "key_name": "strange_matter", "tier": 1, "stack_size": 50},
         {"name": "Titanium crystal(钛水晶)", "key_name": "titanium_crystal", "tier": 2, "stack_size": 100},
         {"name": "Carbon nanotube(碳纳米管)", "key_name": "carbon_nanotube", "tier": 3, "stack_size": 100},
-        {"name": "Reinforced thruster(加力推进器)", "key_name": "reinforced_thruster", "tier": 3, "stack_size": 50},
         {"name": "Spiniform stalagmite crystal(刺状石笋晶体)", "key_name": "spiniform_stalagmite_crystal", "tier": 3, "stack_size": 50},
         {"name": "Gear(齿轮)", "key_name": "gear", "tier": 2, "stack_size": 100},
         {"name": "Plasma exciter(电浆激发器)", "key_name": "plasma_exciter", "tier": 3, "stack_size": 50},
@@ -102,10 +116,9 @@
         {"name": "Plane filter(滤波器)", "key_name": "plane_filter", "tier": 3, "stack_size": 200},
         {"name": "Quantum chip(量子芯片)", "key_name": "quantum_chip", "tier": 3, "stack_size": 200},
         {"name": "Logistics vessel(运输船)", "key_name": "logistics_vessel", "tier": 3, "stack_size": 20},
-        {"name": "Log(木材)", "key_name": "log", "tier": 0, "stack_size": 100},
-        {"name": "Electromagnetic matrix(电磁矩阵)", "key_name": "electromagnetic_matrix", "tier": 3, "stack_size": 200},
-        {"name": "Energy matrix(能量矩阵)", "key_name": "energy_matrix", "tier": 3, "stack_size": 200},
-        {"name": "Structure matrix(结构矩阵)", "key_name": "structure_matrix", "tier": 3, "stack_size": 200},
+        {"name": "Electromagnetic matrix(电磁矩阵)", "key_name": "electromagnetic_matrix", "tier": 6, "stack_size": 200},
+        {"name": "Energy matrix(能量矩阵)", "key_name": "energy_matrix", "tier": 6, "stack_size": 200},
+        {"name": "Structure matrix(结构矩阵)", "key_name": "structure_matrix", "tier": 6, "stack_size": 200},
         {"name": "Information matrix(信息矩阵)", "key_name": "information_matrix", "tier": 6, "stack_size": 200},
         {"name": "Gravity matrix(引力矩阵)", "key_name": "gravity_matrix", "tier": 6, "stack_size": 200},
         {"name": "Universe matrix(宇宙矩阵)", "key_name": "universe_matrix", "tier": 6, "stack_size": 200},
@@ -146,35 +159,50 @@
         {"name": "Oil refinery(原油精炼厂)", "key_name": "oil_refinery", "tier": 2, "stack_size": 20},
         {"name": "Miniature particle collider(微型粒子对撞机)", "key_name": "miniature_particle_collider", "tier": 2, "stack_size": 10},
         {"name": "Matrix lab(矩阵实验室)", "key_name": "matrix_lab", "tier": 2, "stack_size": 20},
+        {"name": "Self-evolution Lab", "key_name": "matrix_lab2", "tier": 2, "stack_size": 20},
         {"name": "Vertical launching silo(垂直发射井)", "key_name": "vertical_launching_silo", "tier": 2, "stack_size": 10},
         {"name": "Assembling machine Mk.I(制造台 Mk.I)", "key_name": "assembling_machine_mk_i", "tier": 3, "stack_size": 50},
         {"name": "Assembling machine Mk.II(制造台 Mk.II)", "key_name": "assembling_machine_mk_ii", "tier": 3, "stack_size": 50},
         {"name": "Assembling machine Mk.III(制造台 Mk.III)", "key_name": "assembling_machine_mk_iii", "tier": 3, "stack_size": 50},
+        {"name": "Re-composing Assembler", "key_name": "re-composing_assembler", "tier": 3, "stack_size": 50},
         {"name": "Arc Smelter(电弧熔炉)", "key_name": "smelter1", "tier": 3, "stack_size": 50},
         {"name": "Plane Smelter", "key_name": "smelter2", "tier": 3, "stack_size": 50},
-        {"name": "Spray coater(喷涂机)", "key_name": "spray_coater", "tier": 3, "stack_size": 20},
+        {"name": "Negentropy Smelter", "key_name": "smelter3", "tier": 3, "stack_size": 50},
+        {"name": "Spray Coater(喷涂机)", "key_name": "spray_coater", "tier": 3, "stack_size": 20},
         {"name": "Chemical plant(化工厂)", "key_name": "chemical_plant", "tier": 3, "stack_size": 20},
         {"name": "Fractionator(分馏器)", "key_name": "fractionator", "tier": 3, "stack_size": 20},
-        {"name": "Engine", "key_name": "engine", "tier": 2, "stack_size": 200},
-        {"name": "Prototype", "key_name": "prototype", "tier": 2, "stack_size": 200},
-        {"name": "Precision Drone", "key_name": "precision_drone", "tier": 3, "stack_size": 200},
-        {"name": "Attack Drone", "key_name": "attack_drone", "tier": 4, "stack_size": 200},
-        {"name": "Corvette", "key_name": "corvette", "tier": 5, "stack_size": 200},
-        {"name": "Destroyer", "key_name": "destroyer", "tier": 6, "stack_size": 200},
+        {"name": "Prototype", "key_name": "prototype", "tier": 5, "stack_size": 200},
+        {"name": "Precision Drone", "key_name": "precision_drone", "tier": 5, "stack_size": 200},
+        {"name": "Attack Drone", "key_name": "attack_drone", "tier": 5, "stack_size": 200},
+        {"name": "Corvette", "key_name": "corvette", "tier": 5, "stack_size": 50},
+        {"name": "Destroyer", "key_name": "destroyer", "tier": 5, "stack_size": 200},
+        {"name": "Logistics Distributor", "key_name": "logistics_distributor", "tier": 3, "stack_size": 50},
         {"name": "Logistics Bot", "key_name": "logistics_bot", "tier": 3, "stack_size": 200},
-        {"name": "Combustible Unit", "key_name": "combustible_unit", "tier": 2, "stack_size": 200},
-        {"name": "Explosive Unit", "key_name": "explosive_unit", "tier": 3, "stack_size": 200},
-        {"name": "Crystal Explosive Unit", "key_name": "crystal_explosive_unit", "tier": 5, "stack_size": 200},
-        {"name": "Magnum Ammo Box", "key_name": "magnum_ammo_box", "tier": 2, "stack_size": 100},
-        {"name": "Titanium Ammo Box", "key_name": "titanium_ammo_box", "tier": 3, "stack_size": 100},
-        {"name": "Superalloy Ammo Box", "key_name": "superalloy_ammo_box", "tier": 4, "stack_size": 100},
-        {"name": "Missile Set", "key_name": "missile_set", "tier": 2, "stack_size": 100},
-        {"name": "Supersonic Missile Set", "key_name": "supersonic_missile_set", "tier": 4, "stack_size": 100},
-        {"name": "Gravity Missile Set", "key_name": "gravity_missile_set", "tier": 6, "stack_size": 100},
-        {"name": "Shell Set", "key_name": "shell_set", "tier": 2, "stack_size": 100},
-        {"name": "High-Explosive Shell Set", "key_name": "high-explosive_shell_set", "tier": 4, "stack_size": 100},
-        {"name": "Crystal Shell Set", "key_name": "crystal_shell_set", "tier": 6, "stack_size": 100},
-        {"name": "Plasma Capsule", "key_name": "plasma_capsule", "tier": 5, "stack_size": 100}
+        {"name": "Combustible Unit", "key_name": "combustible_unit", "tier": 4, "stack_size": 200},
+        {"name": "Explosive Unit", "key_name": "explosive_unit", "tier": 4, "stack_size": 200},
+        {"name": "Crystal Explosive Unit", "key_name": "crystal_explosive_unit", "tier": 4, "stack_size": 200},
+        {"name": "Magnum Ammo Box", "key_name": "magnum_ammo_box", "tier": 5, "stack_size": 100},
+        {"name": "Titanium Ammo Box", "key_name": "titanium_ammo_box", "tier": 5, "stack_size": 100},
+        {"name": "Superalloy Ammo Box", "key_name": "superalloy_ammo_box", "tier": 5, "stack_size": 100},
+        {"name": "Missile Set", "key_name": "missile_set", "tier": 5, "stack_size": 100},
+        {"name": "Supersonic Missile Set", "key_name": "supersonic_missile_set", "tier": 5, "stack_size": 100},
+        {"name": "Gravity Missile Set", "key_name": "gravity_missile_set", "tier": 5, "stack_size": 100},
+        {"name": "Shell Set", "key_name": "shell_set", "tier": 5, "stack_size": 100},
+        {"name": "High-Explosive Shell Set", "key_name": "high-explosive_shell_set", "tier": 5, "stack_size": 100},
+        {"name": "Crystal Shell Set", "key_name": "crystal_shell_set", "tier": 5, "stack_size": 100},
+        {"name": "Plasma Capsule", "key_name": "plasma_capsule", "tier": 5, "stack_size": 100},
+        {"name": "Antimatter Capsule", "key_name": "antimatter_capsule", "tier": 5, "stack_size": 100},
+        {"name": "Gauss Turret", "key_name": "gauss_turret", "tier": 5, "stack_size": 50},
+        {"name": "Missile Turret", "key_name": "missile_turret", "tier": 5, "stack_size": 50},
+        {"name": "Gauss Turret", "key_name": "gauss_turret", "tier": 5, "stack_size": 50},
+        {"name": "Implosion Cannon", "key_name": "implosion_cannon", "tier": 5, "stack_size": 50},
+        {"name": "Laser Turret", "key_name": "laser_turret", "tier": 5, "stack_size": 50},
+        {"name": "Plasma Turret", "key_name": "plasma_turret", "tier": 5, "stack_size": 50},
+        {"name": "SR Plasma Turret", "key_name": "sr_plasma_turret", "tier": 5, "stack_size": 20},
+        {"name": "Gauss Turret", "key_name": "gauss_turret", "tier": 5, "stack_size": 50},
+        {"name": "Battlefield Analysis Base", "key_name": "battlefield_analysis_base", "tier": 5, "stack_size": 20},
+        {"name": "Signal Tower", "key_name": "signal_tower", "tier": 5, "stack_size": 20},
+        {"name": "Planetary Shield Generator", "key_name": "planetary_shield_generator", "tier": 5, "stack_size": 50}
     ],
     "recipes": [
         {
@@ -236,6 +264,12 @@
             "time": 3,
             "ingredients": [["iron_ingot", 8], ["glass", 4], ["circuit_board", 4], ["magnetic_coil", 4]],
             "product": ["matrix_lab", 1]
+        },
+        {
+            "name": "Self-evolution Lab", "key_name": "matrix_lab2", "category": "crafting",
+            "time": 4,
+            "ingredients": [["matrix_lab", 1], ["silicon-based_neuron", 10], ["dark_fog_matrix", 20], ["quantum_chip", 4]],
+            "product": ["matrix_lab2", 1]
         },
         {
             "name": "Prism(棱镜)", "key_name": "prism", "category": "crafting",
@@ -454,6 +488,12 @@
             "product": ["antimatter_fuel_rod", 1]
         },
         {
+            "name": "Strange Annihilation Fuel Rod", "key_name": "antimatter_fuel_rod", "category": "crafting",
+            "time": 32,
+            "ingredients": [["antimatter_fuel_rod", 8], ["hydrogen", 10], ["core_element", 1], ["strange_matter", 2], ["frame_material", 1]],
+            "product": ["strange_annihilation_fuel_rod", 1]
+        },
+        {
             "name": "Assembling machine Mk.I(制造台 Mk.I)", "key_name": "assembling_machine_mk_i", "category": "crafting",
             "time": 2,
             "ingredients": [["iron_ingot", 4], ["gear", 8], ["circuit_board", 4]],
@@ -470,6 +510,12 @@
             "time": 4,
             "ingredients": [["assembling_machine_mk_ii", 1], ["particle_broadband", 8], ["quantum_chip", 2]],
             "product": ["assembling_machine_mk_iii", 1]
+        },
+        {
+            "name": "Re-composing Assembler", "key_name": "re-composing_assembler", "category": "crafting",
+            "time": 5,
+            "ingredients": [["assembling_machine_mk_iii", 1], ["matter_recombinator", 8], ["energy_shard", 30], ["quantum_chip", 4]],
+            "product": ["re-composing_assembler", 1]
         },
         {
             "name": "Mining machine(采矿机)", "key_name": "mining_machine", "category": "crafting",
@@ -533,6 +579,16 @@
                 ["plane_filter", 4],
                 ["unipolar_magnet", 15]],
             "product": ["smelter2", 1]
+        },
+        {
+            "name": "Negentropy Smelter", "key_name": "smelter3", "category": "crafting",
+            "time": 6,
+            "ingredients": [
+                ["smelter2", 1],
+                ["negentropy_singularity", 10],
+                ["energy_shard", 30],
+                ["quantum_chip", 4]],
+            "product": ["smelter3", 1]
         },
         {
             "name": "Glass(玻璃)", "key_name": "glass", "category": "smelting",
@@ -853,7 +909,7 @@
             "product": ["proliferator_mk_iii", 1]
         },
         {
-            "name": "Spray coater(喷涂机)", "key_name": "spray_coater", "category": "crafting",
+            "name": "Spray Coater(喷涂机)", "key_name": "spray_coater", "category": "crafting",
             "time": 2,
             "ingredients": [["plasma_exciter", 1], ["circuit_board", 4], ["steel", 2]],
             "product": ["spray_coater", 1]
@@ -931,6 +987,12 @@
             "product": ["destroyer", 1]
         },
         {
+            "name": "Logistics Distributor", "key_name": "logistics_distributor", "category": "crafting",
+            "time":  8,
+            "ingredients": [["iron_ingot", 8], ["plasma_exciter", 4], ["processor", 4]],
+            "product": ["logistics_distributor", 1]
+        },
+        {
             "name": "Logistics Bot", "key_name": "logistics_bot", "category": "crafting",
             "time":  2,
             "ingredients": [["iron_ingot", 2], ["engine", 1], ["processor", 1]],
@@ -945,7 +1007,7 @@
         {
             "name": "Explosive Unit", "key_name": "explosive_unit", "category": "chemical_plant",
             "time":  6,
-            "ingredients": [["explosive_unit", 2], ["plastic", 2], ["sulfuric_acid", 1]],
+            "ingredients": [["combustible_unit", 2], ["plastic", 2], ["sulfuric_acid", 1]],
             "product": ["explosive_unit", 2]
         },
         {
@@ -1013,6 +1075,66 @@
             "time":  2,
             "ingredients": [["graphene", 1], ["magnet", 2], ["deuterium", 10]],
             "product": ["plasma_capsule", 1]
+        },
+        {
+            "name": "Antimatter Capsule", "key_name": "antimatter_capsule", "category": "crafting",
+            "time":  2,
+            "ingredients": [["plasma_capsule", 1], ["particle_container", 1], ["hydrogen", 10], ["antimatter", 10]],
+            "product": ["antimatter_capsule", 1]
+        },
+        {
+            "name": "Gauss Turret", "key_name": "gauss_turret", "category": "crafting",
+            "time":  4,
+            "ingredients": [["iron_ingot", 8], ["gear", 8], ["circuit_board", 2], ["magnetic_coil", 4]],
+            "product": ["gauss_turret", 1]
+        },
+        {
+            "name": "Missile Turret", "key_name": "missile_turret", "category": "crafting",
+            "time":  6,
+            "ingredients": [["steel", 8], ["electric_motor", 6], ["circuit_board", 12], ["engine", 6]],
+            "product": ["missile_turret", 1]
+        },
+        {
+            "name": "Implosion Cannon", "key_name": "implosion_cannon", "category": "crafting",
+            "time":  5,
+            "ingredients": [["steel", 10], ["electric_motor", 8], ["circuit_board", 10], ["super-magnetic_ring", 2]],
+            "product": ["implosion_cannon", 1]
+        },
+        {
+            "name": "Laser Turret", "key_name": "laser_turret", "category": "crafting",
+            "time":  6,
+            "ingredients": [["steel", 9], ["plasma_exciter", 6], ["circuit_board", 6], ["photon_combiner", 9]],
+            "product": ["laser_turret", 1]
+        },
+        {
+            "name": "Plasma Turret", "key_name": "plasma_turret", "category": "crafting",
+            "time":  10,
+            "ingredients": [["titanium_alloy", 20], ["titanium_glass", 10], ["super-magnetic_ring", 10], ["plasma_exciter", 5], ["processor", 5]],
+            "product": ["plasma_turret", 1]
+        },
+        {
+            "name": "SR Plasma Turret", "key_name": "sr_plasma_turret", "category": "crafting",
+            "time":  8,
+            "ingredients": [["steel", 15], ["super-magnetic_ring", 5], ["plasma_exciter", 5], ["processor", 5]],
+            "product": ["sr_plasma_turret", 1]
+        },
+        {
+            "name": "Battlefield Analysis Base", "key_name": "battlefield_analysis_base", "category": "crafting",
+            "time":  6,
+            "ingredients": [["steel", 12], ["circuit_board", 18], ["microcrystalline_component", 6], ["engine", 12]],
+            "product": ["battlefield_analysis_base", 1]
+        },
+        {
+            "name": "Signal Tower", "key_name": "signal_tower", "category": "crafting",
+            "time":  6,
+            "ingredients": [["wireless_power_tower", 2], ["steel", 12], ["crystal_silicon", 6]],
+            "product": ["signal_tower", 1]
+        },
+        {
+            "name": "Planetary Shield Generator", "key_name": "planetary_shield_generator", "category": "crafting",
+            "time":  30,
+            "ingredients": [["steel", 20], ["electromagnetic_turbine", 20], ["super-magnetic_ring", 5], ["particle_container", 5]],
+            "product": ["planetary_shield_generator", 1]
         }
     ],
     "resources": [
