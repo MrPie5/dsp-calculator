@@ -181,6 +181,9 @@
         {"name": "Combustible Unit", "key_name": "combustible_unit", "tier": 4, "stack_size": 200},
         {"name": "Explosive Unit", "key_name": "explosive_unit", "tier": 4, "stack_size": 200},
         {"name": "Crystal Explosive Unit", "key_name": "crystal_explosive_unit", "tier": 4, "stack_size": 200},
+        {"name": "Jamming Capsule", "key_name": "jamming_capsule", "tier": 4, "stack_size": 100},
+        {"name": "Suppressing Capsule", "key_name": "suppressing_capsule", "tier": 4, "stack_size": 100},
+        {"name": "Jammer Tower", "key_name": "jammer_tower", "tier": 4, "stack_size": 50},
         {"name": "Magnum Ammo Box", "key_name": "magnum_ammo_box", "tier": 5, "stack_size": 100},
         {"name": "Titanium Ammo Box", "key_name": "titanium_ammo_box", "tier": 5, "stack_size": 100},
         {"name": "Superalloy Ammo Box", "key_name": "superalloy_ammo_box", "tier": 5, "stack_size": 100},
@@ -1015,6 +1018,24 @@
             "time": 24,
             "ingredients": [["explosive_unit", 8], ["casimir_crystal", 1], ["crystal_silicon", 8]],
             "product": ["crystal_explosive_unit", 8]
+        },
+        {
+            "name": "Jamming Capsule", "key_name": "jamming_capsule", "category": "crafting",
+            "time": 2,
+            "ingredients": [["electromagnetic_turbine", 1], ["plasma_exciter", 1], ["hydrogen", 3]],
+            "product": ["jamming_capsule", 1]
+        },
+        {
+            "name": "Suppressing Capsule", "key_name": "suppressing_capsule", "category": "crafting",
+            "time": 8,
+            "ingredients": [["jamming_capsule", 2], ["super-magnetic_ring", 1], ["titanium_glass", 2]],
+            "product": ["suppressing_capsule", 2]
+        },
+        {
+            "name": "Jammer Tower", "key_name": "jammer_tower", "category": "crafting",
+            "time": 5,
+            "ingredients": [["copper_ingot", 12], ["plasma_exciter", 9], ["diamond", 6], ["processor", 3]],
+            "product": ["jammer_tower", 1]
         },
         {
             "name": "Magnum Ammo Box", "key_name": "magnum_ammo_box", "category": "crafting",
