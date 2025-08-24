@@ -493,7 +493,7 @@
         {
             "name": "Strange Annihilation Fuel Rod", "key_name": "antimatter_fuel_rod", "category": "crafting",
             "time": 32,
-            "ingredients": [["antimatter_fuel_rod", 8], ["hydrogen", 10], ["core_element", 1], ["strange_matter", 2], ["frame_material", 1]],
+            "ingredients": [["antimatter_fuel_rod", 8], ["core_element", 1], ["strange_matter", 2], ["frame_material", 1]],
             "product": ["strange_annihilation_fuel_rod", 1]
         },
         {
